@@ -9,34 +9,50 @@ App runs on port 9999
 
 Access the app from endpoint: API Gateway from localhost:9999 is the single point of entry or a gateway for all the incoming traffic to our microservices.
 
-offers-microservice-spring-boot
+# offers-microservice-spring-boot
 
-Zuul API endpoint:  http://localhost:9999/offer/offers
-Original endpoint: http://localhost:1001/api/v1/offers
+- Zuul API endpoint:  http://localhost:9999/offer/offers
+  Original endpoint: http://localhost:1001/api/v1/offers
+
 Method: GET
+
 Response:
+
 {"samsung":"Samsung 10% Discount","adidas":"Adidas Shoe 70% Off","nikeshoe":"Nike Sports Shoe 50% off"}
-shoes-microservice-spring-boot
 
-Zuul API endpoint:  http://localhost:9999/shoe/shoes
-Original endpoint: http://localhost:1002/api/v1/shoes
+# shoes-microservice-spring-boot
+
+- Zuul API endpoint:  http://localhost:9999/shoe/shoes
+  Original endpoint: http://localhost:1002/api/v1/shoes
+
 Method: GET
+
 Response:
+
 {"tommy":"Tommy Hilfiger Shoe","adidas":"Adidas Running Shoe","nikeshoe":"Nike Sports Shoe"}
-wishlist-microservice-python
 
-Zuul API endpoint:  http://localhost:9999/wishlist
-Original endpoint: http://localhost:1003/
+# wishlist-microservice-python
+
+- Zuul API endpoint:  http://localhost:9999/wishlist
+  Original endpoint: http://localhost:1003/
+
 Method: GET
+
 Response:
+
 {"1": "Apple Iphone", "2": "MacBook", "3": "Your Fav Something else"}
-cart-microservice-nodejs
 
-Zuul API endpoint:  http://localhost:9999/cart
-Original endpoint: http://localhost:1004/api/v1/
+# cart-microservice-nodejs
+
+- Zuul API endpoint:  http://localhost:9999/cart
+  Original endpoint: http://localhost:1004/api/v1/
+
 Method: GET
+
 Response:
+
 {"data":[{"itemNo":1,"item":"Nike Shoe"},{"itemNo":2,"item":"Tommy Hilfiger Shirt"},{"itemNo":3,"item":"Calvin Klien Trousers"}]}
+
 About Zuul
 zuul-api-gateway Microservice is a API gateway using Netflix Zuul.
 
@@ -99,12 +115,12 @@ You can integrate Zuul with other Netflix stack components like Hystrix for faul
 
 Reference and src:
 
-https://netflixtechblog.com/announcing-zuul-edge-service-in-the-cloud-ab3af5be08ee
+- https://netflixtechblog.com/announcing-zuul-edge-service-in-the-cloud-ab3af5be08ee
 
-https://netflixtechblog.com/open-sourcing-zuul-2-82ea476cb2b3
+- https://netflixtechblog.com/open-sourcing-zuul-2-82ea476cb2b3
 
-https://medium.com/@jegasingamjeyanthasingam/zuul-functionality-routing-proxy-and-filters-285f911146ea
+- https://medium.com/@jegasingamjeyanthasingam/zuul-functionality-routing-proxy-and-filters-285f911146ea
 
-https://medium.com/omarelgabrys-blog/microservices-with-spring-boot-creating-our-microserivces-gateway-part-2-31f8aa6b215b
+- https://medium.com/omarelgabrys-blog/microservices-with-spring-boot-creating-our-microserivces-gateway-part-2-31f8aa6b215b
 
-https://levelup.gitconnected.com/spring-cloud-zuul-api-gateway-dffa5933d570
+- https://levelup.gitconnected.com/spring-cloud-zuul-api-gateway-dffa5933d570
